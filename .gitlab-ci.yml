@@ -1,0 +1,66 @@
+stages:
+  - build and push
+  - commit config
+
+include:
+  - project: "devops/ci-cd/kubernetes"
+    ref: master
+    file: "variables.yaml"
+  - project: "devops/ci-cd/kubernetes"
+    ref: master
+    file: "scripts/base.yaml"
+
+build:events:dev:k8s:
+  extends: .build
+  environment:
+    name: dev.events
+    url: https://dev.itmo.events
+  variables:
+    ENVIRONMENT: develop
+  rules:
+    - if: $CI_COMMIT_BRANCH == 'develop' && $CI_PIPELINE_SOURCE != 'merge_request_event'
+      when: on_success
+  script:
+    - echo "$env" > ".env"
+    - docker build -f Dockerfile --build-arg NPM_TOKEN=${CI_JOB_TOKEN} -t $CI_COMMIT_SHA .
+
+deploy:events:dev:k8s:
+  extends: .commit
+  environment:
+    name: dev.events
+    url: https://dev.itmo.events
+  variables:
+    ENVIRONMENT: develop
+  needs:
+    - build:events:dev:k8s
+  stage: commit config
+  rules:
+    - if: $CI_COMMIT_BRANCH == 'develop' && $CI_PIPELINE_SOURCE != 'merge_request_event' && $CI_PIPELINE_SOURCE != 'schedule'
+      when: on_success
+
+build:events:prod:k8s:
+  extends: .build
+  environment:
+    name: prod.events
+    url: https://itmo.events
+  variables:
+    ENVIRONMENT: production
+  only:
+    - master
+  script:
+    - echo "$env" > ".env"
+    - docker build -f Dockerfile --build-arg NPM_TOKEN=${CI_JOB_TOKEN} -t $CI_COMMIT_SHA .
+
+deploy:events:prod:k8s:
+  extends: .commit
+  environment:
+    name: prod.events
+    url: https://itmo.events
+  variables:
+    ENVIRONMENT: production
+  needs:
+    - build:events:prod:k8s
+  stage: commit config
+  when: manual
+  only:
+    - master

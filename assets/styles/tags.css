@@ -1,0 +1,23 @@
+.pink-tag {
+  background: var(--pink--tag-color);
+}
+
+.orange-tag {
+  background: var(--orange-tag-color);
+}
+
+.red-tag {
+  background: var(--red-tag-color);
+}
+
+.green-tag {
+  background: var(--green-tag-color);
+}
+
+.blue-tag {
+  background: var(--blue-tag-color);
+}
+
+.lilac-tag {
+  background: var(--lilac-tag-color);
+}

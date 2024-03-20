@@ -1,0 +1,18 @@
+### NuxtJS template
+# Generated dirs
+dist
+.nuxt
+.nuxt-*
+.output
+.gen
+
+# Node dependencies
+node_modules
+
+# System files
+*.log
+
+.idea/
+.DS_Store
+
+.env

@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "GolosText";
+  src: url("assets/fonts/GolosText-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "GolosText";
+  src: url("assets/fonts/GolosText-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "GolosText";
+  src: url("assets/fonts/GolosText-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "GolosText";
+  src: url("assets/fonts/GolosText-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ALS Gorizont Variable";
+  src: url("../fonts/ALSGorizont-Thin.otf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "ALS Gorizont Variable";
+  src: url("../fonts/ALSGorizont-Light.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "ALS Gorizont Variable";
+  src: url("../fonts/ALSGorizont-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "ALS Gorizont Variable";
+  src: url("assets/fonts/ALSGorizont-Medium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "ALS Gorizont Variable";
+  src: url("../fonts/ALSGorizont-Bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ALS Gorizont Variable";
+  src: url("../fonts/ALSGorizont-ExtraBold.otf");
+  font-weight: 800;
+}
+
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --link-color: #254ddd;
+  --secondary-color: #333333;
+  --primary-color: #0b68fe;
+  --orange-color: #ee8423;
+  --red-color: #d2342d;
+  --green-color: #03ad3f;
+
+  --alert-green-color: #3aa981;
+  --alert-yellow-color: #edbb3a;
+
+  /*tags*/
+  --pink--tag-color: #ef85b4;
+  --orange-tag-color: #f07f55;
+  --red-tag-color: #e83757;
+  --green-tag-color: #00a255;
+  --blue-tag-color: #008dcf;
+  --lilac-tag-color: #8373b3;
+
+  /*paddings*/
+  --padding-s: 8px;
+  --padding-m: 16px;
+  --padding-l: 32px;
+
+  /*margins*/
+  --margin-s: 8px;
+  --margin-m: 16px;
+  --margin-l: 24px;
+  --margin-xl: 32px;
+
+  /*sections*/
+  --max-width-base: 1150px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+button,
+html,
+body,
+span {
+  font-family: "GolosText", serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "ALS Gorizont Variable", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 750;
+  line-height: 52px;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 38px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+ul li {
+  padding-left: 1rem;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 26px;
+    line-height: 40px;
+  }
+  h3 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+}
+
+/* Style for hide map logo */
+.maplibregl-ctrl-bottom-left,
+.maplibregl-ctrl-bottom-right {
+  display: none;
+}
