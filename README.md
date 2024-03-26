@@ -59,7 +59,3 @@ We are grateful to the Vue and Nuxt teams for the Vue and Nuxt frameworks that w
 
 
 Also, we want to thank ITMO University for access to the servers, Jira and Confluence.
-
-
-## Implementation
-![Main page](https://drive.google.com/file/d/1gY9I6pATE_Mnygvab4ay0w5oqbSWXxxm/view?usp=sharing)
