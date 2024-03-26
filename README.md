@@ -1,23 +1,19 @@
-# Nuxt 3 Minimal Starter
+# ITMO EVENTS: a new look at student activities
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This project is intended for ITMO students who organize and participate in University events.
+With this project students have the opportunity to add information about their event to a user-friendly platform,
+register participants on it and send a tickets to the event.  
+
+
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more info about framework.
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
 # yarn
 yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
@@ -25,17 +21,8 @@ bun install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
 # yarn
 yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
@@ -43,33 +30,32 @@ bun run dev
 Build the application for production:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
 # yarn
 yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
 # yarn
 yarn preview
-
-# bun
-bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Status
+
+Today this project is available for users via link https://itmo.events 
+
+Work is underway on the admin panel and the ability to create custom registration forms.
+
+## Contacts
+
+To contact me about the project, you can write to me at yurii@niuitmo.ru.
+
+## Gratitude
+
+We are grateful to the Vue and Nuxt teams for the Vue and Nuxt frameworks that we used to create this application.
+
+
+Also, we want to thank ITMO University for access to the servers, Jira and Confluence.
