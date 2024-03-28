@@ -43,6 +43,23 @@ yarn preview
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
+## Figma
+
+https://www.figma.com/file/Z58UIssvXMC8MyGWpqGKNn/ITMO%2FEVENTS?type=design&node-id=1653%3A869&mode=design&t=zHPWNBJj2JVPyCeC-1
+
+## Pages
+
+1. Main page
+2. Event page
+3. Events history
+
+## Interface Components
+
+– Carousel with the most popular events  
+– Filters by tags be itmo  
+– Horizontal calendar with an associated date picker and the ability to filter by one date or an interval of several days
+– Custom map with the ability to estimate the distance from your location to your destination  
+
 ## Status
 
 Today this project is available for users via link https://itmo.events 
