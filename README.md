@@ -57,7 +57,7 @@ https://www.figma.com/file/Z58UIssvXMC8MyGWpqGKNn/ITMO%2FEVENTS?type=design&node
 
 – Carousel with the most popular events  
 – Filters by tags be itmo  
-– Horizontal calendar with an associated date picker and the ability to filter by one date or an interval of several days
+– Horizontal calendar with an associated date picker and the ability to filter by one date or an interval of several days  
 – Custom map with the ability to estimate the distance from your location to your destination  
 
 ## Status
